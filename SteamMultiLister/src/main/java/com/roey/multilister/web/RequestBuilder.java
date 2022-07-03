@@ -32,7 +32,6 @@ public class Connection {
         }
         responseContent.append("]");
         responseContent.replace(0, 19, "");
-        System.out.println(responseContent.subSequence(0, 100));
         bufferedReader.close();
 
         return responseContent.toString();
